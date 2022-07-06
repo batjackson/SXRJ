@@ -1,0 +1,172 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//黄禧荣 登陆页
+		{
+			"path": "pages/index/index",
+			 "style": {  
+			    "enablePullDownRefresh": false
+			  }  
+		},
+		{
+			"path": "pages/index/login",
+			"style": {
+			   "enablePullDownRefresh": false
+			 }  
+		},
+		{
+			"path": "pages/index/Cding",
+			"style": {
+			   "enablePullDownRefresh": false
+			 }  
+		},
+		//黄佳诗 OA首页和详情
+		{
+		"path" : "pages/OA/subscribe/subscribe",
+		    "style" :                                                                                    
+		    {
+				"navigationBarTitleText":"",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleNView":false
+				},
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/OA/OADetail/OADetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "OA详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		//肖嘉琪 我的页面 
+		{
+			"path": "pages/Me/level1/myPages/myPages"
+		},
+		{ 
+			"path": "pages/Me/level2/myPages/setting",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{ 
+			"path": "pages/Me/level2/myPages/collect"
+			// "style": {
+			// 	"navigationBarTitleText": "",
+			// 	"enablePullDownRefresh": true,
+			// 	"onReachBottomDistance": 200
+			// 			}
+
+		},
+		{
+			"path": "pages/Me/level2/myPages/test"
+		},
+		//张志宏 添加日程
+		{"path": "pages/addSchedule/addSche",
+			"style":{
+				"navigationBarTitleText":"",
+				"navigationStyle":"custom",
+				"app-plus":{
+				    "titleNView":false
+				},
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/schedule/schedule",
+			"style":{
+				"navigationBarTitleText":"",
+				"navigationStyle":"custom",
+				"app-plus":{
+				    "titleNView":false
+				},
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+		    "path" : "pages/schedule/scheDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		//李思瑶 管理订阅
+		{
+			"path": "pages/ManageSubscription/subscription",
+			"style": {
+				"navigationBarTitleText": "订阅",
+					"navigationStyle": "custom"
+				
+			}
+		},{
+			"path": "pages/ManageSubscription/compile",
+			"style": {
+				"navigationBarTitleText": "编辑订阅",
+				"navigationStyle": "custom"
+		
+			}
+		}
+        
+    ],	
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app demo",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#7CCD7C",
+		"enablePullDownRefresh":true,
+		"backgroundTextStyle":"light",
+		"h5":{
+			"pullToRefresh":{
+				"color":"#7D26CD"
+			}
+		}
+		 
+	},
+	"tabBar":{
+		"color":"#C0C0C0",
+		"selectedColor":"#007AFF",
+		// "backgroundColor":"#BA55D3",
+		"borderStyle":"white",
+		"position":"bottom",
+		"list":[{
+			"text":"OA",
+			"pagePath":"pages/OA/subscribe/subscribe",
+			"iconPath":"static/tabs/OA.png",
+			"selectedIconPath":"static/tabs/active.png"
+		},{
+			"text":"要事",
+			"pagePath":"pages/schedule/schedule",
+			"iconPath":"static/tabs/Issues.png",
+			"selectedIconPath":"static/tabs/active.png"
+		},{
+			"text":"日寄广场",
+			// "pagePath":"pages/addSchedule/addSche",
+			"iconPath":"static/tabs/AddIssues.png",
+			"selectedIconPath":"static/tabs/active.png"
+		},
+			{"text":"一卡通",
+			// "pagePath":"pages/ManageSubscription/subscription",
+			"iconPath":"static/tabs/ManageSubscription.png",
+			"selectedIconPath":"static/tabs/active.png"
+		
+		},{"text":"我",
+			"pagePath":"pages/Me/level1/myPages/myPages",
+			"iconPath":"static/tabs/Me.png",
+			"selectedIconPath":"static/tabs/active.png"
+		
+		}]
+	},
+	"condition":{ //启动模式配置 仅在开发模式生效，用于直达页面的目的
+		"current":0, //当前激活的模式 list索引
+		"list":[{ //启动模式列表
+			"name":"登录页", //启动模式名称
+			"path":"pages/index/index", //路径
+			"query":"id=80"} //启动参数，可在页面onLoad函数获得
+		]
+	}
+}

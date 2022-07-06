@@ -1,0 +1,168 @@
+
+.background.data-v-2e073146{
+	background-color: #9E45BD;
+	width: 100%;
+	height: 440rpx;
+	border-radius: 0 0 60rpx 60rpx;
+}
+/* 设置按钮 */
+.setting.data-v-2e073146{
+	width: 35px;
+	height: 35px;
+}
+.settingPosition.data-v-2e073146{
+	position: relative;
+	left: 650rpx;
+	top: 100rpx;
+}
+/* 中心部分样式 */
+.myPart.data-v-2e073146{
+	background-color: white;
+	height: 1072rpx;
+	width: 670rpx;
+	position: fixed;
+	top: 230rpx;
+	left: 40rpx;
+	border-radius: 60rpx;
+	box-shadow: inset 0 0 20rpx #CCC;
+}
+/* 头像部分样式 */
+.photoPosition.data-v-2e073146{
+	position: relative;
+	top: 200rpx;
+	left: 234rpx;
+}
+.photo.data-v-2e073146{
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 100rpx;
+}
+/* 邮箱文字部分 */
+.email.data-v-2e073146{
+	position: relative;
+	top: 240rpx;
+	text-align: center;
+	font-size: 34rpx;
+}
+/* 灰色分割线×4 */
+.line.data-v-2e073146{
+	position: relative;
+	left: 64rpx;
+	width: 82%;
+	border-bottom: 3rpx solid #EDEAF4;
+}
+.lineFirst.data-v-2e073146{
+	top: 270rpx;
+}
+.lineSecond.data-v-2e073146{
+	top: 230rpx;
+}
+.lineThird.data-v-2e073146{
+	top: 190rpx;
+}
+/* 三栏整体样式 */
+.icon.data-v-2e073146{
+	position: relative;
+	top: 290rpx;
+	left: 64rpx;
+}
+.iconBackground.data-v-2e073146{
+	width: 82rpx;
+	height: 82rpx;
+	border-radius: 20rpx;
+	padding: 5rpx;
+}
+.textPosition.data-v-2e073146{
+	position: relative;
+	top: -72rpx;
+}
+.text.data-v-2e073146{
+    margin-left: 120rpx;
+}
+/* 右箭头样式 */
+.rightArrow.data-v-2e073146{
+	width: 20px;
+	height: 20px;
+	margin-left: 520rpx;
+	top: -18px;
+}
+/* 皇冠一拦 */
+.crownIcon.data-v-2e073146{
+	top: 300rpx;
+}
+.crown.data-v-2e073146{
+	background-color: #E6F7FF;
+}
+/* 分享一栏 */
+.shareIcon.data-v-2e073146{
+	top: 260rpx;
+}
+.share.data-v-2e073146{
+	background-color: #FFF7E6;
+}
+/* 帮助一栏 */
+.helpIcon.data-v-2e073146{
+	top: 220rpx;
+}
+.help.data-v-2e073146{
+	background-color: #E6FFFB;
+}
+/* 底部分享栏 */
+.popup.data-v-2e073146 {
+	position: fixed;
+	left: 0; 
+	right: 0;
+	top: 0;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 9998;
+}
+.popup-info.data-v-2e073146{
+	position: fixed;
+	width: 100%;
+	bottom: 120rpx;
+	font-size: 30rpx;
+	padding: 40rpx;
+	background-color: #fff;
+	z-index: 9999;
+}
+.popup-btn.data-v-2e073146{
+	display: flex;
+	flex-direction: raw;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+}
+.shareText.data-v-2e073146{
+	color: #969696;
+	margin-bottom: 30rpx;
+}
+.iconShare.data-v-2e073146{
+	width: 80rpx;
+	height: 80rpx;
+}
+.iconAndText.data-v-2e073146{
+	width: 130rpx;
+	height: 130rpx;
+	text-align: center;
+	margin-top: 30rpx;
+	margin-left: 5rpx;
+}
+/* 取消按钮 */
+.cancelButton.data-v-2e073146{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 116rpx;
+	background-color: white;
+	text-align: center;
+	font-size: 35rpx;
+	box-shadow: 0 -20rpx 0 #CCC;
+	margin-top: 20rpx;
+}
+.cancelText.data-v-2e073146{
+	color: #000000;
+	position: relative;
+	top: 30rpx;
+}
+
+

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/OA/OA",
+    "pages/issues/issues",
+    "pages/AddIssues/AddIssues",
+    "pages/ManageSubscription/ManageSubscription",
+    "pages/Me/Me"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app demo",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#7CCD7C",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#C0C0C0",
+    "selectedColor": "#007AFF",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "OA",
+        "pagePath": "pages/OA/OA",
+        "iconPath": "static/tabs/OA.png",
+        "selectedIconPath": "static/tabs/active.png"
+      },
+      {
+        "text": "要事",
+        "pagePath": "pages/issues/issues",
+        "iconPath": "static/tabs/Issues.png",
+        "selectedIconPath": "static/tabs/active.png"
+      },
+      {
+        "text": "添加要事",
+        "pagePath": "pages/AddIssues/AddIssues",
+        "iconPath": "static/tabs/AddIssues.png",
+        "selectedIconPath": "static/tabs/active.png"
+      },
+      {
+        "text": "订阅管理",
+        "pagePath": "pages/ManageSubscription/ManageSubscription",
+        "iconPath": "static/tabs/ManageSubscription.png",
+        "selectedIconPath": "static/tabs/active.png"
+      },
+      {
+        "text": "我",
+        "pagePath": "pages/Me/Me",
+        "iconPath": "static/tabs/Me.png",
+        "selectedIconPath": "static/tabs/active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

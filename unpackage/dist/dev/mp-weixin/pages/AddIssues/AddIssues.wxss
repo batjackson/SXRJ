@@ -1,0 +1,13 @@
+
+view{
+	color: #DD524D;
+}
+.box1{
+	color:#C0C0C0;
+	font-size: 30rpx;
+	width: 375rpx;
+	height: 375rpx;
+	background-color: #007AFF;
+}
+
+
