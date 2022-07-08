@@ -71,7 +71,7 @@
 			console.log("getToken: "+this.token);
 			let that = this;
 				uni.request({
-					url:'http://119.23.222.86:8890/oa/details',
+					url:'http://121.5.56.179:8890/oa/details',
 					data:{
 						OAId: this.id
 					},
@@ -96,7 +96,7 @@
 					let that = this;
 					console.log("变了")
 					uni.request({
-						url:"http://119.23.222.86:8890/oa/favorites",
+						url:"http://121.5.56.179:8890/oa/favorites",
 						data:{
 							token:this.token,
 							page:1,
@@ -158,7 +158,7 @@
 			tocheckfavor(){
 				let that =this;
 				uni.request({
-					url:"http://119.23.222.86:8890/oa/favorites",
+					url:"http://121.5.56.179:8890/oa/favorites",
 					data:{
 						token:this.token,
 						page:1,
@@ -185,7 +185,7 @@
 				let that = this;
 				if(!this.clicktwice){
 					uni.request({
-						url:'http://119.23.222.86:8890/user-favorites/add-to-favorites',
+						url:'http://121.5.56.179:8890/user-favorites/add-to-favorites',
 						data:{
 							token:this.token,
 							oaId:this.id
@@ -217,7 +217,7 @@
 				}
 				else{
 				    uni.request({
-						url:"http://119.23.222.86:8890/user-favorites/remove-from-favorites",
+						url:"http://121.5.56.179:8890/user-favorites/remove-from-favorites",
 						data:{
 							token:this.token,
 							oaId:this.id

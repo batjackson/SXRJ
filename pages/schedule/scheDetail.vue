@@ -62,7 +62,7 @@
 	data() {
 	  return {
 		  //删除某条日程数据：dailyId
-		  deleteDailyUrl: 'http://119.23.222.86:8890/daily/remove-from-daily',
+		  deleteDailyUrl: 'http://121.5.56.179:8890/daily/remove-from-daily',
 		  eventDate:'',
 		  /*上一界面传入的事件对象和日期*/
 		  inputEvent:'',

@@ -95,9 +95,9 @@
       return {
 		/*日程请求url*/
 		//获取用户日程数据:参数token
-		getDailyUrl: 'http://119.23.222.86:8890/daily/list',
+		getDailyUrl: 'http://121.5.56.179:8890/daily/list',
 		//对某条数据check：dailyId
-		checkDailyUrl: 'http://119.23.222.86:8890/daily/check',
+		checkDailyUrl: 'http://121.5.56.179:8890/daily/check',
 		
 		//用户的token
 		token:'',

@@ -77,7 +77,7 @@
             "disableHostCheck" : true,
             "proxy" : {
                 "/oa" : {
-                    "target" : "http://119.23.222.86:8890",
+                    "target" : "http://121.5.56.179:8890",
                     "changeOrigin" : true,
                     "secure" : false,
                     "pathRewrite" : {
@@ -85,7 +85,7 @@
                     }
                 },
                 "/user-favorites" : {
-                    "target" : "http://119.23.222.86:8890",
+                    "target" : "http://121.5.56.179:8890",
                     "changeOrigin" : true,
                     "secure" : false,
                     "pathRewrite" : {

@@ -67,7 +67,7 @@
 	data() {
 	  return {
 		  //添加日程数据：token，content，conclusion
-		  addDailyUrl: 'http://119.23.222.86:8890/daily/add-to-daily',
+		  addDailyUrl: 'http://121.5.56.179:8890/daily/add-to-daily',
 		  eventDate:'',
 		  eventInfo:{
 			  //创建日期：保留，不知道是否必要

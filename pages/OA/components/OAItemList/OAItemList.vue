@@ -207,7 +207,7 @@
 				console.log("list-token: "+this.token);
 				if(this.selectedCard==1){
 					this.loadstorage=false;
-					let url="http://119.23.222.86:8890/oa/list";
+					let url="http://121.5.56.179:8890/oa/list";
 					let datas = {
 							page:1,
 							size:20,
@@ -226,7 +226,7 @@
 					// 	},
 					// 	fail(){
 					// 		console.log('没有缓存');
-					// 		let url = "http://119.23.222.86:8890/oa/favorites";
+					// 		let url = "http://121.5.56.179:8890/oa/favorites";
 					// 		let datas = {
 					// 			token:this.token,
 					// 			page:1,
@@ -263,7 +263,7 @@
 		},
 		created(){
 			this.getToken();
-			// let url = "http://119.23.222.86:8890/oa/favorites";
+			// let url = "http://121.5.56.179:8890/oa/favorites";
 			// let datas = {
 			// 	token:this.token,
 			// 	page:1,
@@ -498,7 +498,7 @@
 					console.log("刷新成功");
 					this.loadstorage=false;
 					if(this.selectedCard==1){
-						let url="http://119.23.222.86:8890/oa/list";
+						let url="http://121.5.56.179:8890/oa/list";
 						let datas = {
 								page:1,
 								size:20,
@@ -546,7 +546,7 @@
 					if(this.ifNext){
 						let that=this;
 						uni.request({
-							url:'http://119.23.222.86:8890/oa/list?page=1&size=10&order=1&str=通知',
+							url:'http://121.5.56.179:8890/oa/list?page=1&size=10&order=1&str=通知',
 							data:{
 								page:this.pageIndex,
 								size:10,
@@ -586,7 +586,7 @@
 				
 				for(let i=0;i<d;i++){
 					uni.request({
-						url:"http://119.23.222.86:8890/oa/list",
+						url:"http://121.5.56.179:8890/oa/list",
 						data:{
 							page:1,
 							size:10,

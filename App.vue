@@ -4,7 +4,7 @@
 			
 			function getNewOA(){
 					uni.request({
-						url:"http://119.23.222.86:8890/oa/list",
+						url:"http://121.5.56.179:8890/oa/list",
 						data :{
 							page:1,
 							size:20,

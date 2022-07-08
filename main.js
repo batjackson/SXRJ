@@ -26,10 +26,10 @@ if(process.env.NODE_ENV === 'development'){
 Vue.prototype.$baseUrl = "/oa"
 // #endif
 // #ifdef APP-PLUS ||MP
-Vue.prototype.$baseUrl = "http://119.23.222.86:8890"
+Vue.prototype.$baseUrl = "http://121.5.56.179:8890"
 // #endif
 }else{
-Vue.prototype.$baseUrl = "https://119.23.222.86:8890"
+Vue.prototype.$baseUrl = "https://121.5.56.179:8890"
 }
 
 //app 防杀 安卓端 （需在安卓手机上测试 H5无法测试）
