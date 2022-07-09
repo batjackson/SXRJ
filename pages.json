@@ -111,7 +111,46 @@
 		
 			}
 		}
-        
+        //一卡通
+        ,{
+            "path" : "pages/smartcard/smartcard",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+		// 日寄
+        ,{
+            "path" : "pages/happen/STUDiary",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		//日寄详情
+		,{
+		    "path" : "pages/happen/diaryDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		//添加日寄
+        ,{
+            "path" : "pages/happen/newHappen",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],	
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -145,12 +184,12 @@
 			"selectedIconPath":"static/tabs/active.png"
 		},{
 			"text":"日寄广场",
-			// "pagePath":"pages/addSchedule/addSche",
+			"pagePath":"pages/happen/STUDiary",
 			"iconPath":"static/tabs/AddIssues.png",
 			"selectedIconPath":"static/tabs/active.png"
 		},
 			{"text":"一卡通",
-			// "pagePath":"pages/ManageSubscription/subscription",
+			"pagePath":"pages/smartcard/smartcard",
 			"iconPath":"static/tabs/ManageSubscription.png",
 			"selectedIconPath":"static/tabs/active.png"
 		
@@ -168,5 +207,14 @@
 			"path":"pages/index/index", //路径
 			"query":"id=80"} //启动参数，可在页面onLoad函数获得
 		]
-	}
+	},
+	"easycom": {
+			"autoscan": true,
+			"custom": {
+	            // // 1.1.0 版本前:
+	            // "cl-(.*)": "cl-uni/components/$1/$1.vue"
+	            // 1.1.0 版本后:
+	            "cl-(.*)": "cl-uni/components/cl-$1/cl-$1.vue"
+			}
+		}
 }

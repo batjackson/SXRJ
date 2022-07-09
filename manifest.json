@@ -91,7 +91,16 @@
                     "pathRewrite" : {
                         "^/user-favorites" : ""
                     }
-                }
+                },
+				"/api": {
+					"target": "http://121.5.56.179:8890",
+					"changeOrigin": true,
+					"secure": false,
+					"pathRewrite" : {
+					    "^/api" : ""
+					}
+				}
+
             }
         }
     }
