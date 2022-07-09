@@ -18,3 +18,12 @@
   font-size: 20px;
 }
 
+
+.icon-yongyan:before {
+  content: "\e600";
+}
+
+.icon-pinglun:before {
+  content: "\e6ad";
+}
+
