@@ -41,7 +41,7 @@
 		        "enablePullDownRefresh": false
 		    }
 		    
-		},
+		},		
 		//肖嘉琪 我的页面 
 		{
 			"path": "pages/Me/level1/myPages/myPages"
@@ -111,7 +111,25 @@
 		
 			}
 		}
-        
+        //黄佳诗 日寄页面
+        ,{
+            "path" : "pages/STUDiary/STUDiary",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/diaryDetail/diaryDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],	
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -145,7 +163,7 @@
 			"selectedIconPath":"static/tabs/active.png"
 		},{
 			"text":"日寄广场",
-			// "pagePath":"pages/addSchedule/addSche",
+			"pagePath":"pages/STUDiary/STUDiary",
 			"iconPath":"static/tabs/AddIssues.png",
 			"selectedIconPath":"static/tabs/active.png"
 		},
