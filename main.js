@@ -1,5 +1,9 @@
 import App from './App'
-
+import ClUni from "cl-uni";
+// Vue.use(ClUni, {
+// 	// 进入业务单页时，页面栈只有一个，自定义导航左侧返回按钮跳转的路径
+// 	homePage: "/"
+// });
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
@@ -31,6 +35,8 @@ Vue.prototype.$baseUrl = "http://121.5.56.179:8890"
 }else{
 Vue.prototype.$baseUrl = "https://121.5.56.179:8890"
 }
+
+
 
 //app 防杀 安卓端 （需在安卓手机上测试 H5无法测试）
 // plus.device.setVolume(0);

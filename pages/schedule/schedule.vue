@@ -11,7 +11,7 @@
 				<text>重要的事情</text>
 			</view>
 		</view>
-		<view class="calendar">
+		<view class="calendar" >
 			<!-- 日历 -->
 			<!-- <image src="../../static/schedule/demo.png" mode="widthFix"></image> -->
 			<!-- 这里考虑到要根据日期切换下方的日程列表，需要与数据库交互，比较复杂，待设计；先贴个图以表尊敬 -->
@@ -19,11 +19,13 @@
 			      <!-- 年份 月份 -->
 			      <view class="month">
 						<view class="leftbtn" @click="weekPre()">
-							<img src="../../static/schedule/doubleLeft.png" mode=""></img>
+							<<
+							<!-- <img src="/static/schedule/doubleLeft.png" mode=""></img> -->
 						</view>
 						<view>{{ currentYear }}年{{ currentMonth }}月</view>
 						<view class="rightbtn" @click="weekNext()">
-							<img src="../../static/schedule/doubleRight.png" mode=""></img>
+							>>
+							<!-- <img src="/static/schedule/doubleRight.png" mode=""></img> -->
 						</view>
 			      </view>
 			      <!-- 星期 -->
@@ -82,7 +84,10 @@
 			</view>
 			
 		</view>
-		<img src="../../static/tabs/AddIssues.png" alt="" @click="addSche" class="addSche">
+		<view class="addSche" @click="addSche" >
+			
+		</view>
+		<!-- <img src="../../static/tabs/AddIssues.png" alt="" @click="addSche" class="addSche"> -->
 		<!-- ljs 添加日程 -->
 		
 	</view>
@@ -90,7 +95,10 @@
 
 <script>
   export default {
-	
+	onPullDownRefresh() {
+		this.getToken()
+		
+	},
     data() {
       return {
 		/*日程请求url*/
@@ -238,6 +246,7 @@
 				}					
 			});
 			// console.log(token);
+			uni.stopPullDownRefresh()
 			return this.token
 		},
 		// 获取当前时间
@@ -276,7 +285,7 @@
 				if(this.todayList[i].timestamp<=this.nowTime.timestamp){
 					// console.log('timestamp')
 					this.todayList[i].timeState=true
-					this.todayList[i].iconPath = '../../static/schedule/past.png',
+					this.todayList[i].iconPath = '/static/schedule/past.png',
 					this.todayList[i].linePath = '../../static/schedule/loaded.png'
 				}
 			}
@@ -473,7 +482,7 @@
 		},
 		addSche(){
 			uni.navigateTo({
-			    url: "../addSchedule/addSche"
+			    url: "/pages/addSchedule/addSche"
 				/*跳转页面路径,传递的参数为日程id和日程所在日的时间戳*/
 			});
 		}
@@ -554,9 +563,19 @@
 	}
 	.leftbtn{
 		padding-left: 20rpx;
+		width: 50rpx;
+		height: 50rpx;
+		background-image: url(../../static/schedule/doubleLeft.png);
+/* 		background-color: #000000; */
+		color: #000000;
+		
 	}
+
 	.rightbtn{
 		padding-right: 20rpx;
+		width: 50rpx;
+		height: 50rpx;
+		color: #000000;
 	}
 	.leftbtn img{
 	   width: 50rpx;
@@ -679,6 +698,8 @@
 	
 	.addSche {
 		width: 210rpx;
-		margin:700rpx 0rpx 200rpx 500rpx ;
+		height: 180rpx;
+		background-image: url(../../static/schedule/AddIssues.png);
+		margin:400rpx 0rpx 200rpx 500rpx ;
 	}
 </style>
